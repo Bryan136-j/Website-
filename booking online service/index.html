@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Service Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="glass-card">
+    <h1>🔧 Tech Service Booking</h1>
+    <p class="subtitle">Booking Servis Perangkat Teknologi Anda</p>
+
+    <div class="form">
+        <input type="text" id="name" placeholder="Nama Lengkap">
+        <input type="text" id="service" placeholder="Jenis Servis (Laptop / HP / PC)">
+        <input type="date" id="date">
+        <button onclick="addBooking()">🚀 Booking Sekarang</button>
+    </div>
+
+    <h2>📋 Riwayat Booking</h2>
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Servis</th>
+                    <th>Tanggal</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="list"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
